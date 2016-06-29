@@ -20,12 +20,20 @@ body{
 }
 @media(max-width:768px){
 	.wrapper{
-		padding: 0px 16px 0px;
+		width: 100%;
+		display: block;
 	}
 }
 .left_box{
 	width: 50%;
 	float: left;
+}
+@media(max-width:768px){
+	.left_box{
+		width: 100%;
+		float: none;
+		margin: 40px 0 0 0;
+	}
 }
 .left_box h1{
 	font-size: 3.2rem;
@@ -52,10 +60,17 @@ body{
 .right_box{
 	width: 50%;
 }
+@media(max-width:768px){
+	.right_box{
+		width: 100%;
+		margin: 40px 0 0 0;
+	}	
+}
 .iphone_wrap{
 	position: relative;
 	width: 300px;
 	margin: 0 auto;
+	padding: 24px 0 0 0;
 }
 .iphone{
 }
