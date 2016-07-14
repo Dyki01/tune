@@ -6,11 +6,28 @@ body{
 	background-size: cover;
 	text-align: center;
 	margin: 0;
+	background: url(../image/bg.jpg);
+	background-size: cover;
+	color: #ffffff;
+}
+.main{
+	height: 100vh;
+}
+.header{
+    position: absolute;
+    top: -150px;
+
+}
+.header img{
+	width: 176px;
+}
+.header a:hover{
+	opacity: .9;
 }
 .wrapper{  
 	padding: 0px 0px 0px;
 	width: 80%;
-	height: 100vh;
+	
 	background-size: cover;
 	background-position: center;
 	margin: 0 auto;
@@ -27,6 +44,7 @@ body{
 .left_box{
 	width: 50%;
 	float: left;
+	position: relative;
 }
 @media(max-width:768px){
 	.left_box{
@@ -38,6 +56,9 @@ body{
 .left_box h1{
 	font-size: 3.2rem;
 }
+.right_box{
+	width: 50%;
+}
 .left_box p{
 	font-size: 1.6rem;
 	padding: 0 0 24px;
@@ -48,18 +69,38 @@ body{
 	margin: 30px 0 0 0;
 }
 .left_box .typeform_btn a{
-	background: #dedede;
-	padding: 16px 24px;
+	background: #2F68B4;
+	padding: 20px 24px;
 	border-radius: 3px;
 	text-decoration: none;
 	color: #ffffff;
+	font-size: 1.6rem;
 }
 .left_box .typeform_btn a:hover{
 	opacity: 0.8;
 }
-.right_box{
-	width: 50%;
+.left_box .btn_message{
+	font-size: 1.2rem;
+	width: 80%;
+    margin: 0 auto;
+	padding: 24px 0 24px 0;
+	
 }
+@media(max-width:768px){
+	.left_box .btn_message{
+		width: 80%;
+    	margin: 0 auto;
+    	padding: 24px 0 24px 0;
+	}
+}
+.left_box .fab4wdcup{
+	
+}
+.fab4wdcup 	img{
+	width: 112px;
+}
+   
+
 @media(max-width:768px){
 	.right_box{
 		width: 100%;
@@ -76,8 +117,8 @@ body{
 }
 .right_box .movie{
 	/*width: 258px;*/
-    bottom: 95px;
+    top: 82px;
     position: absolute;
-    right: 22px;
+    right: 17px;
     z-index: 2;
 }
