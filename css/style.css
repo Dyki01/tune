@@ -56,11 +56,21 @@ body{
 .left_box .header img{
 	width: 176px;
 }
+@media(max-width:768px){
+	.left_box .header img{
+		width: 130px;
+	}
+}
 .left_box .header a:hover{
 	opacity: .9;
 }
 .left_box h1{
 	padding-top: 120px;	
+}
+@media(max-width:768px){
+	.left_box h1{
+		padding-top: 80px;
+	}
 }
 .left_box p{
 	font-size: 1.6rem;
@@ -101,7 +111,7 @@ body{
 }
 @media(max-width:768px){
 	.left_box .fab4wdcup{
-		margin: 24px 0 0 0;
+		margin: 0px 0 0 0;
 	}
 }
 .right_box{
@@ -124,16 +134,21 @@ body{
 	margin: 0 auto;
 	padding: 56px 0 0 0;
 }
-/*@media(max-width:768px){
-	.iphone_wrap{
-		width: 300px;	
+@media(max-width:768px){
+	.right_box .iphone_wrap{
+		padding: 0px;
 	}	
-}*/
+}
 .right_box .comingsoon{
 	z-index: 10;
 	position: absolute;
 	top: 30px;
 	right: -25px;
+}
+@media(max-width:768px){
+	.right_box .comingsoon{
+		top: -30px;
+	}
 }
 .right_box .iphone{
 }
@@ -143,4 +158,9 @@ body{
     position: absolute;
     right: 20px;
     z-index: 2;
+}
+@media(max-width:768px){
+	.right_box .movie{
+		top: 85px;		
+	}
 }
