@@ -1,33 +1,20 @@
 html{
 	font-size: 62.5%;
 	font-family: 'Montserrat', sans-serif;
+	margin: 0;
 }
 body{
-	background-size: cover;
 	text-align: center;
-	margin: 0;
 	background: url(../image/bg.jpg);
 	background-size: cover;
 	color: #ffffff;
+	margin: 0;
 }
-.main{
+/*.main{
 	height: 100vh;
-}
-.header{
-    position: absolute;
-    top: -150px;
-
-}
-.header img{
-	width: 176px;
-}
-.header a:hover{
-	opacity: .9;
-}
+}*/
 .wrapper{  
-	padding: 0px 0px 0px;
 	width: 80%;
-	
 	background-size: cover;
 	background-position: center;
 	margin: 0 auto;
@@ -39,12 +26,14 @@ body{
 	.wrapper{
 		width: 100%;
 		display: block;
+		overflow: hidden;
 	}
 }
 .left_box{
 	width: 50%;
 	float: left;
 	position: relative;
+	height: 100vh;
 }
 @media(max-width:768px){
 	.left_box{
@@ -53,11 +42,23 @@ body{
 		margin: 40px 0 0 0;
 	}
 }
+.header{
+    position: absolute;
+    top: -15px;
+}
+.header img{
+	width: 176px;
+}
+.header a:hover{
+	opacity: .9;
+}
 .left_box h1{
-	font-size: 3.2rem;
+	/*font-size: 3.2rem;*/
+	padding-top: 120px;	
 }
 .right_box{
 	width: 50%;
+	height: 100vh;
 }
 .left_box p{
 	font-size: 1.6rem;
@@ -94,13 +95,11 @@ body{
 	}
 }
 .left_box .fab4wdcup{
-	
+	margin: 64px 0 0 0;	
 }
 .fab4wdcup 	img{
 	width: 112px;
 }
-   
-
 @media(max-width:768px){
 	.right_box{
 		width: 100%;
@@ -113,12 +112,23 @@ body{
 	margin: 0 auto;
 	padding: 24px 0 0 0;
 }
+/*@media(max-width:768px){
+	.iphone_wrap{
+		width: 300px;	
+	}	
+}*/
+.comingsoon{
+	z-index: 10;
+	position: absolute;
+	top: -8px;
+	right: -20px;
+}
 .iphone{
 }
 .right_box .movie{
 	/*width: 258px;*/
-    top: 82px;
+    top: 103px;
     position: absolute;
-    right: 17px;
+    right: 20px;
     z-index: 2;
 }
