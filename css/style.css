@@ -10,9 +10,9 @@ body{
 	color: #ffffff;
 	margin: 0;
 }
-/*.main{
-	height: 100vh;
-}*/
+.main{
+	margin-top: -15px;
+}
 .wrapper{  
 	width: 80%;
 	background-size: cover;
@@ -39,26 +39,28 @@ body{
 	.left_box{
 		width: 100%;
 		float: none;
-		margin: 40px 0 0 0;
+		margin: 0px 0 0 0;
+		height: auto;
 	}
 }
-.header{
+.left_box .header{
     position: absolute;
-    top: -15px;
+    top: -5px;
 }
-.header img{
+@media(max-width:768px){
+	.left_box .header{
+		top:-13px;
+		padding: 0 0 0 15px;
+	}
+}	
+.left_box .header img{
 	width: 176px;
 }
-.header a:hover{
+.left_box .header a:hover{
 	opacity: .9;
 }
 .left_box h1{
-	/*font-size: 3.2rem;*/
 	padding-top: 120px;	
-}
-.right_box{
-	width: 50%;
-	height: 100vh;
 }
 .left_box p{
 	font-size: 1.6rem;
@@ -68,6 +70,7 @@ body{
 	text-align: center;
 	display: block;
 	margin: 30px 0 0 0;
+	height: 58px;
 }
 .left_box .typeform_btn a{
 	background: #2F68B4;
@@ -84,50 +87,59 @@ body{
 	font-size: 1.2rem;
 	width: 80%;
     margin: 0 auto;
-	padding: 24px 0 24px 0;
-	
+	padding: 0px 0 24px 0;
 }
 @media(max-width:768px){
 	.left_box .btn_message{
 		width: 80%;
     	margin: 0 auto;
-    	padding: 24px 0 24px 0;
+    	padding: 0px 0 24px 0;
 	}
 }
 .left_box .fab4wdcup{
 	margin: 64px 0 0 0;	
 }
-.fab4wdcup 	img{
-	width: 112px;
+@media(max-width:768px){
+	.left_box .fab4wdcup{
+		margin: 24px 0 0 0;
+	}
+}
+.right_box{
+	width: 50%;
+	height: 100vh;
 }
 @media(max-width:768px){
 	.right_box{
 		width: 100%;
 		margin: 40px 0 0 0;
+		height: auto;
 	}	
 }
-.iphone_wrap{
+.left_box .fab4wdcup img{
+	width: 112px;
+}
+.right_box .iphone_wrap{
 	position: relative;
 	width: 300px;
 	margin: 0 auto;
-	padding: 24px 0 0 0;
+	padding: 56px 0 0 0;
 }
 /*@media(max-width:768px){
 	.iphone_wrap{
 		width: 300px;	
 	}	
 }*/
-.comingsoon{
+.right_box .comingsoon{
 	z-index: 10;
 	position: absolute;
-	top: -8px;
-	right: -20px;
+	top: 30px;
+	right: -25px;
 }
-.iphone{
+.right_box .iphone{
 }
 .right_box .movie{
 	/*width: 258px;*/
-    top: 103px;
+    top: 135px;
     position: absolute;
     right: 20px;
     z-index: 2;
